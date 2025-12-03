@@ -26,7 +26,7 @@ Adjust the values in the sidebar and click **Predict** to see the result.
 # 3️⃣ Load Pre-trained Model
 # ======================================================
 # Make sure your trained model is saved as 'life_model.pkl'
-best_model = joblib.load("life_model.pkl")
+best_model = joblib.load("life_model_compressed.pkl")
 
 # ======================================================
 # 4️⃣ Default Values for Features
@@ -116,3 +116,4 @@ plt.title("Feature Importance")
 plt.xlabel("Importance")
 plt.ylabel("Features")
 st.pyplot(plt)
+
